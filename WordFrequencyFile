@@ -1,0 +1,21 @@
+class WordFrequency:
+    def __init__(self):
+        pass
+    
+    def wordFrequency(self, line):
+        words = line.split()
+        freqDict = {}
+        for word in words:
+            word = word.lower()
+            if word in freqDict:
+                freqDict[word] +=1
+            else:
+                freqDict[word] = 1
+            sortDict = dict(sorted(freqDict.items()))
+            
+        return sortDict
+        
+x = WordFrequency()
+result = x.wordFrequency("which is better python 2 or python 3")
+for key, value in result.items():
+    print(f"{key} : {value}")
