@@ -1,1 +1,6 @@
-print("Hello World")
+class WordFrequency:
+    def __init__(self):
+        pass
+
+    def printFunction(self):
+        print("Hello World")
