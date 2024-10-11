@@ -1,0 +1,26 @@
+from passwordAutenticityVerification import Verification
+from WordFrequency import WordFrequency
+from HelloWorld import PrintFunction
+
+class MainClass:
+    def passwordAutenticityVerification(self, password):
+        pass
+
+    def wordFrequency(self, line):
+        pass
+
+    def printFunction(self):
+        pass
+
+
+
+x = MainClass()
+
+result = x.passwordAutenticityVerification("aSqwr1234@1,aF145#,2w3E*,2We3345")
+print(result)
+
+result1 = x.wordFrequency("which is better python 2 or python 3")
+for key, value in result1.items():
+    print(f"{key} : {value}")
+
+x.printFunction()
